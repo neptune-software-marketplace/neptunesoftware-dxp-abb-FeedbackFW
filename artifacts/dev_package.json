@@ -7,9 +7,15 @@
 	},
 	"name": "com.neptune-software.devt.feedbackFW",
 	"description": "Feedback Framework Marketplace ",
-	"ver": "23.2.6.160",
+	"ver": "23.2.6.161",
 	"enableCICD": true,
 	"apps": [
+		{
+			"id": "f05a5c32-38a6-ed11-a8e0-000d3aba7851",
+			"application": "feedback_adaptive_edit_withimage",
+			"title": "Adaptive Edit",
+			"description": "Adaptive Edit"
+		},
 		{
 			"id": "764f447f-0e6f-ed11-9f60-000d3aba46be",
 			"application": "feedbackbutton",
@@ -62,7 +68,7 @@
 			"id": "95fa7206-34a6-ed11-a8e0-000d3aba7851",
 			"name": "FeedBackFW_Detail",
 			"description": "",
-			"application": "planet9_adaptive_edit_withimage"
+			"application": "feedback_adaptive_edit_withimage"
 		}
 	],
 	"api_authentication": [],
