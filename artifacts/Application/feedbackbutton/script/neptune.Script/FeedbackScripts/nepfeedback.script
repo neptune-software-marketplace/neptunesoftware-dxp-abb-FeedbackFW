@@ -17,9 +17,11 @@ Nepfeedback = {
         html2canvas(document.body, {
             useCORS: true,
             removeContainer: true,
-            imageTimeout: 50000,
+            logging: false,
+            //imageTimeout: 50000,
             ignoreElements: function (element) {
                 if ("nepFeedback" == element.id) return true;
+                if ("oDialogFeedback" == element.id) return true;
             },
         })
             .then(function (canvas) {
@@ -28,9 +30,16 @@ Nepfeedback = {
                 Nepfeedback.originalImage = canvas.toDataURL("image/jpeg");
                 Nepfeedback.originalWidth = canvas.width;
                 Nepfeedback.originalHeigth = canvas.height;
+                oDialogFeedback.open();
+                if (appShell) {
+                    appShell.setBusy(false);
+                }
             })
             .catch(function (error) {
                 console.error(error);
+                if (appShell) {
+                    appShell.setBusy(false);
+                }
             });
     },
     resetLayout: function () {
@@ -173,7 +182,6 @@ Nepfeedback = {
         return true;
     },
     getCurrentApp: function () {
-      
         if (AppCache) {
             Nepfeedback.currentApp = AppCache.CurrentApp;
         } else {

@@ -21,7 +21,12 @@ sap.ui.getCore().attachInit(function (startParams) {
         var nepFeedback = new sap.m.Button("nepFeedback", {
             icon: "sap-icon://feedback",
             press: function () {
-                oDialogFeedback.open();
+                if(appShell){
+                    appShell.setBusy(true);
+                }
+                
+                Nepfeedback.resetLayout();
+                Nepfeedback.generateImage();
             }
         })
         nepFeedback.addStyleClass("neptFBFloating");
