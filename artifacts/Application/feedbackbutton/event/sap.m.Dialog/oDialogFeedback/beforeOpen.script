@@ -1,5 +1,3 @@
-//Nepfeedback.resetLayout();
-//Nepfeedback.generateImage();
 Nepfeedback.getCurrentApp();
 
 let nepFeedback_dom = document.getElementById('nepFeedback')
