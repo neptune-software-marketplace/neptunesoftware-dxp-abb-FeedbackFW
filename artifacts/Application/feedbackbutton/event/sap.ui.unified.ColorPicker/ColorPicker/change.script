@@ -1,0 +1,5 @@
+// assign the new color and transparency
+ oSignaturePad.penColor = this.getColorString();
+oToggleButtonRed.setPressed(true);
+oToggleButtonRed.setPressed(true);
+ //IconSelectedColor.setColor(this.Color.hex);

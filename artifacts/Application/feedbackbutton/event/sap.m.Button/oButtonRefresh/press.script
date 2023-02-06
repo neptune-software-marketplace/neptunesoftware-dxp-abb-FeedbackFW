@@ -1,0 +1,5 @@
+// Clears the Signaturepad
+oSignaturePad.clear();
+
+// Set Image to Signaturepad
+oSignaturePad.fromDataURL(oImageFeedback.getSrc());

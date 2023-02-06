@@ -1,0 +1,37 @@
+{
+	"id": "1cd60359-e07a-ed11-9f60-000d3aba46be",
+	"createdAt": "2022-12-13T12:19:11.310Z",
+	"createdBy": "carlos.pires@neptune-software.com",
+	"globalScripts": [
+		{
+			"id": "7F7B8550-466B-ED11-9F60-000D3ABA46BE",
+			"name": "AzureBlob - Upload",
+			"contextname": "Upload"
+		},
+		{
+			"id": "42D141DC-4E6B-ED11-9F60-000D3ABA46BE",
+			"name": "AzureBlob - AllowedFileTypes",
+			"contextname": "AllowedFileTypes"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "A27A1752-2CA6-ED11-A8E0-000D3ABA7851",
+			"name": "feedbackfw_main",
+			"contextname": "feedbackfw_main"
+		}
+	],
+	"apis": [],
+	"name": "SaveFeedback",
+	"ver": "23.2.6.1448",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "4558c533-e07a-ed11-9f60-000d3aba46be",
+	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be"
+}

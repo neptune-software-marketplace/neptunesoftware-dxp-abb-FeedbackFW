@@ -1,0 +1,5 @@
+// 	assign the pen size
+	oSignaturePad.maxWidth = this.getValue();
+	oSignaturePad.minWidth = this.getValue();
+	
+	//TextPen.setText(this.getValue());

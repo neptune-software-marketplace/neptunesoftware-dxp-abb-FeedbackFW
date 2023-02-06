@@ -1,0 +1,116 @@
+{
+	"id": "a27a1752-2ca6-ed11-a8e0-000d3aba7851",
+	"createdAt": "2023-02-06T14:41:21.606Z",
+	"createdBy": "carlos.pires@neptune-software.com",
+	"fields": [
+		{
+			"id": "ed4bacaa-09ea-4fa5-e4dc-a756523f0ae9",
+			"fieldName": "deviceID",
+			"fieldType": "uuid",
+			"isNullable": true
+		},
+		{
+			"id": "1248c26b-1226-4abe-f4fe-d4438749e6ea",
+			"fieldName": "app",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "266807c3-34ab-4493-d4c2-954eba7b154e",
+			"fieldName": "comment",
+			"fieldType": "text",
+			"isNullable": true,
+			"isUnique": false
+		},
+		{
+			"id": "1ef9332b-202a-47e1-f027-88597bfd7144",
+			"fieldName": "reportedBy",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "c9901fe3-2847-4977-8aaf-2cb6af6c9eb6",
+			"fieldName": "image",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "bc2b524e-c087-492a-facd-a743f6e7a7db",
+			"fieldName": "android_phone",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "4cfb7932-2a84-405e-a6ff-fd46592d96e0",
+			"fieldName": "android_tablet",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "fa3d962d-c768-446c-aa2b-a189a0faf0a4",
+			"fieldName": "desktop",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "4a0c9a50-e00e-454d-ffcd-bd5ab4503e76",
+			"fieldName": "ipad",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "7df9b730-dcae-47e5-e34b-82656cf1d87d",
+			"fieldName": "iphone",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "9aa7db3d-2e79-481d-deff-981ba4f1336f",
+			"fieldName": "landscape",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "182b0e1f-93cc-4420-a828-846cba630e14",
+			"fieldName": "phone",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "2c7d1d76-d0f3-40b8-e835-8c76b346a392",
+			"fieldName": "portrait",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "321b0a5b-3acc-441f-e8ab-2c7fb2c27971",
+			"fieldName": "tablet",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "abd870a7-3206-40e9-a22b-1e46e484b363",
+			"fieldName": "os",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "1b0942b7-2880-44ff-e721-7998d1d279d5",
+			"fieldName": "version",
+			"fieldType": "text",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "feedbackfw_main",
+	"description": "FeedBack framework main table",
+	"ver": "23.2.6.1447",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
+	"rolesRead": [],
+	"rolesWrite": []
+}

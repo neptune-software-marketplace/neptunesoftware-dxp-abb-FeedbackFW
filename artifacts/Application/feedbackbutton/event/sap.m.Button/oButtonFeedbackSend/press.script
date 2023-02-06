@@ -1,0 +1,3 @@
+let sent = Nepfeedback.sendFeedback();
+
+if (sent) oDialogFeedback.close();

@@ -1,0 +1,229 @@
+{
+	"id": "95fa7206-34a6-ed11-a8e0-000d3aba7851",
+	"createdAt": "2023-02-06T15:36:30.533Z",
+	"createdBy": "carlos.pires@neptune-software.com",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Emphasized",
+				"iconButtonDelete": "",
+				"textButtonDelete": "Delete",
+				"textToastDelete": "Deleted",
+				"typeButtonDelete": "Reject",
+				"iconButtonAttachment": "",
+				"textButtonAttachment": "Add Attachment",
+				"typeButtonAttachment": "Transparent",
+				"tab0Text": "General",
+				"tabAText": "Attachment",
+				"tab1Text": "Tab 1",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableSave": false,
+				"enableDelete": false,
+				"enableAttachment": false,
+				"enableTab1": false,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"enableUppercase": false,
+				"enablePadding": true,
+				"title": "Detail"
+			},
+			"form": {
+				"enableCompact": false,
+				"enableCentered": true
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "deviceID",
+				"label": "deviceID",
+				"type": "uuid",
+				"usage": "BOTH"
+			},
+			{
+				"name": "app",
+				"label": "app",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "comment",
+				"label": "comment",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "reportedBy",
+				"label": "reportedBy",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "image",
+				"label": "image",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "android_phone",
+				"label": "android_phone",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "android_tablet",
+				"label": "android_tablet",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "desktop",
+				"label": "desktop",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ipad",
+				"label": "ipad",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "iphone",
+				"label": "iphone",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "landscape",
+				"label": "landscape",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "phone",
+				"label": "phone",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "portrait",
+				"label": "portrait",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "tablet",
+				"label": "tablet",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "os",
+				"label": "os",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "version",
+				"label": "version",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"editable": false,
+				"visible": true,
+				"name": "reportedBy",
+				"text": "Submitted by",
+				"fieldPos": 1,
+				"type": ""
+			},
+			{
+				"editable": false,
+				"visible": true,
+				"name": "comment",
+				"text": "Comment",
+				"fieldPos": 2,
+				"type": "TextArea",
+				"textAreaRows": "8"
+			},
+			{
+				"editable": false,
+				"visible": true,
+				"name": "image",
+				"text": "Screenshot",
+				"fieldPos": 3,
+				"type": "Image",
+				"pressEvent": true
+			}
+		],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "d68a4b05-9afc-47d4-b7b3-49a564747164",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "FeedBackFW_Detail",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "1431f728-14a6-ed11-a8e0-000d3aba7851",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "23.2.6.1557",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit_withimage",
+	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

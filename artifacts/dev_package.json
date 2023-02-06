@@ -7,24 +7,93 @@
 	},
 	"name": "com.neptune-software.devt.feedbackFW",
 	"description": "Feedback Framework Marketplace ",
-	"ver": "22.11.28.116",
+	"ver": "23.2.6.160",
 	"enableCICD": true,
-	"apps": [],
-	"api": [],
+	"apps": [
+		{
+			"id": "764f447f-0e6f-ed11-9f60-000d3aba46be",
+			"application": "feedbackbutton",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "ba013c84-e17a-ed11-9f60-000d3aba46be",
+			"name": "FeedBackFW",
+			"description": null,
+			"apiGroup": "cb5aed2c-e27a-ed11-9f60-000d3aba46be"
+		}
+	],
 	"odataSource": [],
 	"odataMock": [],
-	"dictionary": [],
-	"jsclass": [],
-	"jsscript_group": [],
+	"dictionary": [
+		{
+			"id": "a27a1752-2ca6-ed11-a8e0-000d3aba7851",
+			"name": "feedbackfw_main",
+			"description": "FeedBack framework main table"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "1cd60359-e07a-ed11-9f60-000d3aba46be",
+			"name": "SaveFeedback",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "4558c533-e07a-ed11-9f60-000d3aba46be",
+			"name": "FeedBackFW",
+			"description": null
+		}
+	],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
-	"reports": [],
+	"reports": [
+		{
+			"id": "acab278b-14a6-ed11-a8e0-000d3aba7851",
+			"name": "FeedBackFW_List",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "95fa7206-34a6-ed11-a8e0-000d3aba7851",
+			"name": "FeedBackFW_Detail",
+			"description": "",
+			"application": "planet9_adaptive_edit_withimage"
+		}
+	],
 	"api_authentication": [],
-	"api_group": [],
-	"tile": [],
-	"category": [],
-	"launchpad": [],
+	"api_group": [
+		{
+			"id": "cb5aed2c-e27a-ed11-9f60-000d3aba46be",
+			"name": "FeedBackFW",
+			"description": "FeedBack framework"
+		}
+	],
+	"tile": [
+		{
+			"id": "59fe18c6-18a6-ed11-a8e0-000d3aba7851",
+			"description": null,
+			"name": "FeedBackFW_Feedback_List"
+		}
+	],
+	"category": [
+		{
+			"id": "cdd2974c-1aa6-ed11-a8e0-000d3aba7851",
+			"description": null,
+			"name": "FeedBackFW"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "31869ef6-fc7a-ed11-9f60-000d3aba46be",
+			"name": "FeedbackDemo",
+			"description": "Demo Launchpad "
+		}
+	],
 	"certificates": [],
 	"role": [],
 	"systems": [],
@@ -33,6 +102,21 @@
 	"department": [],
 	"script_scheduler": [],
 	"wf_definition": [],
-	"connector": [],
-	"events": []
+	"connector": [
+		{
+			"id": "1431f728-14a6-ed11-a8e0-000d3aba7851",
+			"name": "FeedBackFW_Viewer",
+			"description": "View the submitted log info"
+		}
+	],
+	"events": [],
+	"media_library": [
+		{
+			"id": "6FDBAD3D-31A6-ED11-A8E0-000D3ABA7851",
+			"updatedAt": "2023-02-06T15:16:34.676Z",
+			"name": "FeedBackFW",
+			"parent": null,
+			"package": "89C84A92-0C6F-ED11-9F60-000D3ABA46BE"
+		}
+	]
 }

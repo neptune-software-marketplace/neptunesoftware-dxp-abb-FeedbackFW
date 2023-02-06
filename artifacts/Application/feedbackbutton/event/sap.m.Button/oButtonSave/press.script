@@ -1,0 +1,8 @@
+
+if(Nepfeedback.originalImage !== oSignaturePad.toDataURL() ) Nepfeedback.changedImage = true;
+
+oImageFeedback.setSrc( oSignaturePad.toDataURL() );
+
+Nepfeedback.originalImage = oSignaturePad.toDataURL() ;
+
+oDialogSketch.close(); 
