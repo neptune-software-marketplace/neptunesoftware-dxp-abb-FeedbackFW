@@ -27,7 +27,7 @@ const azureblob = globals.Upload;
             log.error("Only upload of images is allowed!!"); 
             result.statusCode = 500;
             result.data = {
-                msg: "Only upload of images is allowed!!"
+                msg: "Only upload of images is allowed!!" 
             };
 
         } else {

@@ -17,14 +17,14 @@
 	"externalModules": [],
 	"entitySets": [
 		{
-			"id": "A27A1752-2CA6-ED11-A8E0-000D3ABA7851",
+			"id": "81708B56-3DA6-ED11-A8E0-000D3ABA7851",
 			"name": "feedbackfw_main",
 			"contextname": "feedbackfw_main"
 		}
 	],
 	"apis": [],
 	"name": "SaveFeedback",
-	"ver": "23.2.6.1448",
+	"ver": "23.2.6.1645",
 	"description": null,
 	"content": "file:///content.script",
 	"useAsGlobalScript": false,
