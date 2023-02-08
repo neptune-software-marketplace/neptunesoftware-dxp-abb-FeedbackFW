@@ -58,7 +58,7 @@ Nepfeedback = {
         }
     },
     initializeSketch: function () {
-        let container = document.getElementById("oHBoxContainer");
+        let container = oHBoxContainer.getDomRef();
         let canvas = document.createElement("CANVAS");
 
         canvas.id = "SignaturePad";
