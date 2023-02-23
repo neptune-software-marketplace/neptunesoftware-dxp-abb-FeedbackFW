@@ -139,7 +139,7 @@
 									"attribute": "beforeOpen",
 									"grouping": "Events",
 									"value": "Anonymous Function",
-									"script": "file://event/sap.m.Dialog/oDialogFeedback/beforeOpen.script",
+									"script": "file://event/sap.m.Dialog/oDialogFeedback/beforeOpen.js",
 									"language": "javascript",
 									"translation": []
 								},
@@ -147,7 +147,7 @@
 									"attribute": "afterOpen",
 									"grouping": "Events",
 									"value": "Anonymous Function",
-									"script": "file://event/sap.m.Dialog/oDialogFeedback/afterOpen.script",
+									"script": "file://event/sap.m.Dialog/oDialogFeedback/afterOpen.js",
 									"language": "javascript",
 									"translation": []
 								},
@@ -155,7 +155,7 @@
 									"attribute": "afterClose",
 									"grouping": "Events",
 									"value": "Anonymous Function",
-									"script": "file://event/sap.m.Dialog/oDialogFeedback/afterClose.script",
+									"script": "file://event/sap.m.Dialog/oDialogFeedback/afterClose.js",
 									"language": "javascript",
 									"translation": []
 								}
@@ -625,7 +625,7 @@
 																					"attribute": "press",
 																					"grouping": "Events",
 																					"value": "Anonymous Function",
-																					"script": "file://event/sap.m.Button/oButtonVoiceToText/press.script",
+																					"script": "file://event/sap.m.Button/oButtonVoiceToText/press.js",
 																					"language": "javascript",
 																					"translation": []
 																				}
@@ -674,7 +674,7 @@
 																					"attribute": "press",
 																					"grouping": "Events",
 																					"value": "Anonymous Function",
-																					"script": "file://event/sap.m.Button/oButtonVoiceToTextStop/press.script",
+																					"script": "file://event/sap.m.Button/oButtonVoiceToTextStop/press.js",
 																					"language": "javascript",
 																					"translation": []
 																				}
@@ -729,7 +729,7 @@
 																					"attribute": "change",
 																					"grouping": "Events",
 																					"value": "Anonymous Function",
-																					"script": "file://event/sap.m.TextArea/oTextAreaComment/change.script",
+																					"script": "file://event/sap.m.TextArea/oTextAreaComment/change.js",
 																					"language": "javascript",
 																					"translation": []
 																				}
@@ -1309,7 +1309,7 @@
 																	"attribute": "press",
 																	"grouping": "Events",
 																	"value": "Anonymous Function",
-																	"script": "file://event/sap.m.ToggleButton/oToggleButtonGreen/press.script",
+																	"script": "file://event/sap.m.ToggleButton/oToggleButtonGreen/press.js",
 																	"language": "javascript",
 																	"translation": []
 																}
@@ -1351,7 +1351,7 @@
 																	"attribute": "press",
 																	"grouping": "Events",
 																	"value": "Anonymous Function",
-																	"script": "file://event/sap.m.ToggleButton/oToggleButtonRed/press.script",
+																	"script": "file://event/sap.m.ToggleButton/oToggleButtonRed/press.js",
 																	"language": "javascript",
 																	"translation": []
 																}
@@ -1768,7 +1768,7 @@
 							"fieldName": "nepfeedback",
 							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
 							"fieldType": "neptune.Script",
-							"script": "file://script/neptune.Script/FeedbackScripts/nepfeedback.script",
+							"script": "file://script/neptune.Script/FeedbackScripts/nepfeedback.js",
 							"customComponent": false,
 							"request": [],
 							"response": [],
@@ -1780,7 +1780,7 @@
 							"fieldName": "init",
 							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
 							"fieldType": "neptune.Script",
-							"script": "file://script/neptune.Script/FeedbackScripts/init.script",
+							"script": "file://script/neptune.Script/FeedbackScripts/init.js",
 							"customComponent": false,
 							"request": [],
 							"response": [],
@@ -1792,7 +1792,7 @@
 							"fieldName": "html2canvas.min.js",
 							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
 							"fieldType": "neptune.Script",
-							"script": "file://script/neptune.Script/FeedbackScripts/html2canvas.min.js.script",
+							"script": "file://script/neptune.Script/FeedbackScripts/html2canvas.min.js.js",
 							"customComponent": false,
 							"filePath": "html2canvas.min.js",
 							"request": [],
@@ -1805,7 +1805,7 @@
 							"fieldName": "P8SignaturePad.js",
 							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
 							"fieldType": "neptune.Script",
-							"script": "file://script/neptune.Script/FeedbackScripts/P8SignaturePad.js.script",
+							"script": "file://script/neptune.Script/FeedbackScripts/P8SignaturePad.js.js",
 							"customComponent": false,
 							"request": [],
 							"response": [],
@@ -1904,10 +1904,10 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.2.8.1416",
+	"ver": "23.2.23.1745",
 	"application": "feedbackbutton",
-	"title": "",
-	"description": "",
+	"title": "UTIL",
+	"description": "FeedBack Framework",
 	"enableFileStorage": false,
 	"enableManifest": false,
 	"enableStylesheet": false,
@@ -1929,6 +1929,7 @@
 	"ui5_url": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
 	"cus_theme": "",
 	"css": "",
+	"compiledCss": null,
 	"header": "",
 	"manifest": "",
 	"globalScript": null,
@@ -1940,6 +1941,8 @@
 	"ui5_ionic": true,
 	"useV2AppHandler": false,
 	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
 	"apis": [
 		{
 			"id": "ba013c84-e17a-ed11-9f60-000d3aba46be",

@@ -6,7 +6,7 @@
 	"storeItem": {},
 	"settings": {
 		"adaptive": {
-			"id": "ACAB278B-14A6-ED11-A8E0-000D3ABA7851"
+			"id": "acab278b-14a6-ed11-a8e0-000d3aba7851"
 		}
 	},
 	"title": "Feedback",
@@ -79,6 +79,7 @@
 	"roleTag": null,
 	"sapICFNode": null,
 	"actionType": "F",
+	"cockpitTile": false,
 	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
 	"roles": []
 }

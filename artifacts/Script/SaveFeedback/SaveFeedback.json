@@ -26,7 +26,7 @@
 	"name": "SaveFeedback",
 	"ver": "23.2.6.1645",
 	"description": null,
-	"content": "file:///content.script",
+	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,
 	"lastRunSuccessful": false,

@@ -19,8 +19,8 @@
 		{
 			"id": "764f447f-0e6f-ed11-9f60-000d3aba46be",
 			"application": "feedbackbutton",
-			"title": "",
-			"description": ""
+			"title": "UTIL",
+			"description": "FeedBack Framework"
 		}
 	],
 	"api": [
@@ -124,5 +124,8 @@
 			"parent": null,
 			"package": "89C84A92-0C6F-ED11-9F60-000D3ABA46BE"
 		}
-	]
+	],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
 }
