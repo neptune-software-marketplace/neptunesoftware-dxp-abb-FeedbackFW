@@ -1,3 +1,4 @@
+
 Nepfeedback = {
     CSSdefault: {
         distance_from_bottom: "40px",
@@ -168,12 +169,10 @@ Nepfeedback = {
             reportedBy: oInputName.getValue(),
             image: Nepfeedback.originalImage,
             app: Nepfeedback.currentApp,
-            deviceID: AppStorage.deviceID,
+            //deviceID: //AppStorage.deviceID //"5b865584-28f9-4154-b54c-675563d16dfe",
         };
-
         Object.assign(feedback, $.os);
         Object.assign(feedback, $.device.is);
-
         var options = {
             data: feedback,
         };

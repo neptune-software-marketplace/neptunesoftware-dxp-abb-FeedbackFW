@@ -14,13 +14,19 @@
 			"id": "f05a5c32-38a6-ed11-a8e0-000d3aba7851",
 			"application": "feedback_adaptive_edit_withimage",
 			"title": "Adaptive Edit",
-			"description": "Adaptive Edit"
+			"description": "Adaptive Edit",
+			"package": {
+				"id": "89C84A92-0C6F-ED11-9F60-000D3ABA46BE"
+			}
 		},
 		{
 			"id": "764f447f-0e6f-ed11-9f60-000d3aba46be",
 			"application": "feedbackbutton",
 			"title": "UTIL",
-			"description": "FeedBack Framework"
+			"description": "FeedBack Framework",
+			"package": {
+				"id": "89C84A92-0C6F-ED11-9F60-000D3ABA46BE"
+			}
 		}
 	],
 	"api": [
@@ -116,15 +122,6 @@
 		}
 	],
 	"events": [],
-	"media_library": [
-		{
-			"id": "6FDBAD3D-31A6-ED11-A8E0-000D3ABA7851",
-			"updatedAt": "2023-02-06T15:16:34.676Z",
-			"name": "FeedBackFW",
-			"parent": null,
-			"package": "89C84A92-0C6F-ED11-9F60-000D3ABA46BE"
-		}
-	],
 	"code_snippets": [],
 	"wf_determination": [],
 	"wf_taskaction": []
