@@ -7,7 +7,7 @@
 	},
 	"name": "com.neptune-software.devt.feedbackFW",
 	"description": "Feedback Framework Marketplace ",
-	"ver": "23.2.6.161",
+	"ver": "24.4.4.945",
 	"enableCICD": true,
 	"apps": [
 		{
