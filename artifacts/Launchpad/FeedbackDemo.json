@@ -11,7 +11,9 @@
 	"config": {
 		"enhancement": [
 			"==OBJECT STRING==",
-			"sap.n.Enhancement.BeforeUpdate = function() { console.log('Trigger Enhancement BeforeUpdate');AppCache.Load(\"feedbackbutton\", {",
+			"sap.n.Enhancement.BeforeUpdate = function () {",
+			"            console.log('Trigger Enhancement BeforeUpdate');",
+			"            AppCache.Load(\"feedbackbutton\", {",
 			"    load: \"init\",",
 			"    startParams: {",
 			"        distance_from_bottom: \"40px\",",
@@ -19,8 +21,10 @@
 			"        size: \"24px\",",
 			"        color: \"#EBB043\",",
 			"    }",
-			"});};"
-		]
+			"});",
+			"        };"
+		],
+		"showAccessibilityFocusIndicator": true
 	},
 	"enhancement": [
 		{
@@ -70,6 +74,9 @@
 		"        background-position: left bottom, left top, right bottom !important;",
 		"    }",
 		"</style>",
+		"",
+		" <!-- Include dom-to-image library -->",
+		"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js\"></script>",
 		""
 	],
 	"customTheme": null,
@@ -93,7 +100,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "23.2.6.1232",
+	"ver": "24.11.07.1429",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,

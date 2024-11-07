@@ -84,7 +84,6 @@
 									"grouping": "Events",
 									"value": "sap.m.MessageToast.show(\"Saved\");",
 									"script": "sap.m.MessageToast.show(\"Saved\");",
-									"language": "javascript",
 									"translation": []
 								}
 							],
@@ -1794,19 +1793,6 @@
 							"data": []
 						},
 						{
-							"fieldNo": "cf207806-4194-4bd1-aa7d-46e913aabe90",
-							"fieldName": "html2canvas.min.js",
-							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
-							"fieldType": "neptune.Script",
-							"script": "file://script/neptune.Script/FeedbackScripts/html2canvas.min.js.js",
-							"customComponent": false,
-							"filePath": "html2canvas.min.js",
-							"request": [],
-							"response": [],
-							"attributes": [],
-							"data": []
-						},
-						{
 							"fieldNo": "feb369ce-21d9-4c99-b650-526abb688cf8",
 							"fieldName": "P8SignaturePad.js",
 							"fieldParent": "d501f379-119b-4d39-a2ec-9dd4a4bbe352",
@@ -1910,7 +1896,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.4.4.1243",
+	"ver": "24.11.07.1428",
 	"application": "feedbackbutton",
 	"title": "UTIL",
 	"description": "FeedBack Framework",
@@ -1936,7 +1922,7 @@
 	"cus_theme": "",
 	"css": "",
 	"compiledCss": null,
-	"header": "",
+	"header": "file:///header.html",
 	"manifest": "",
 	"globalScript": null,
 	"deleted": false,
