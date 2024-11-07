@@ -1134,6 +1134,6 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
-	"apis": [],
-	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be"
+	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
+	"apis": []
 }

@@ -1937,12 +1937,12 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
 	"apis": [
 		{
 			"id": "ba013c84-e17a-ed11-9f60-000d3aba46be",
 			"name": "FeedBackFW",
 			"ver": "22.12.13.1457"
 		}
-	],
-	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be"
+	]
 }

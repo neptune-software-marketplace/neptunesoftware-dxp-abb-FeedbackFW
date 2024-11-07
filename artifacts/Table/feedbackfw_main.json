@@ -111,6 +111,7 @@
 	"enableAudit": false,
 	"includeDataInPackage": false,
 	"package": "89c84a92-0c6f-ed11-9f60-000d3aba46be",
+	"generationStrategy": null,
 	"rolesRead": [],
 	"rolesWrite": []
 }
