@@ -1,11 +1,10 @@
-let oSignaturePad; // Declare globally
 
-const Nepfeedback = {
+Nepfeedback = {
     CSSdefault: {
         distance_from_bottom: "40px",
         distance_from_right: "40px",
-        size: "24px",
-        color: "rgb(235, 176, 67)", // Using RGB format as a string
+        size: "24px", //24
+        color: "#EBB043",
     },
     originalWidth: null,
     originalHeigth: null,
@@ -15,36 +14,35 @@ const Nepfeedback = {
     changedImage: false,
     changedComment: false,
     currentApp: "",
-
-    // Method to convert the feedback container to an image
     generateImage: function () {
-        console.log("Starting image generation with dom-to-image...");
+        html2canvas(document.body, {
+            useCORS: true,
+            removeContainer: true,
+            logging: false,
+            //imageTimeout: 50000,
+            ignoreElements: function (element) {
+                if ("nepFeedback" == element.id) return true;
+                if ("oDialogFeedback" == element.id) return true;
+            },
+        })
+            .then(function (canvas) {
+                oImageFeedback.setSrc(canvas.toDataURL("image/jpeg"));
 
-        // Define the specific element or section to capture, e.g., #feedbackContainer
-        const captureTarget = document.getElementById("feedbackContainer") || document.body;
-
-        // Use dom-to-image to capture the element
-        domtoimage.toJpeg(captureTarget, { quality: 0.95, bgcolor: 'white' })
-            .then(function (dataUrl) {
-                // Handle the captured image data URL
-                oImageFeedback.setSrc(dataUrl); // Set as feedback image source
-                Nepfeedback.originalImage = dataUrl;
-                Nepfeedback.originalWidth = captureTarget.offsetWidth;
-                Nepfeedback.originalHeigth = captureTarget.offsetHeight;
+                Nepfeedback.originalImage = canvas.toDataURL("image/jpeg");
+                Nepfeedback.originalWidth = canvas.width;
+                Nepfeedback.originalHeigth = canvas.height;
                 oDialogFeedback.open();
-
                 if (appShell) {
                     appShell.setBusy(false);
                 }
             })
             .catch(function (error) {
-                console.error("An error occurred during image generation with dom-to-image:", error);
+                console.error(error);
                 if (appShell) {
                     appShell.setBusy(false);
                 }
             });
     },
-
     resetLayout: function () {
         oTextAreaComment.setValue("");
         oImageFeedback.setSrc("");
@@ -60,7 +58,6 @@ const Nepfeedback = {
             oSplitterLayoutData.setSize("95px");
         }
     },
-    
     initializeSketch: function () {
         let container = oHBoxContainer.getDomRef();
         let canvas = document.createElement("CANVAS");
@@ -68,19 +65,31 @@ const Nepfeedback = {
         canvas.id = "SignaturePad";
         canvas.className = "signature-pad";
         container.appendChild(canvas);
-
         oSignaturePad = new SignaturePad(canvas);
+
+        // define the size
 
         oSignaturePad._canvas.height = oHBoxContainer.getDomRef().clientHeight - 4;
         oSignaturePad._canvas.width = oHBoxContainer.getDomRef().clientWidth - 4;
 
-        oSignaturePad.penColor = `rgba(0,255,0,1)`; // Explicit color assignment
+        // set the colorPicker to black and solid ColorPicker
+        // Red
+        ColorPicker.Color.r = 0;
+        // Green
+        ColorPicker.Color.g = 255;
+        // Blu
+        ColorPicker.Color.b = 0;
+        // Transparency
+        ColorPicker.Color.a = 1;
+        // Set the pencil size to 1
         oSignaturePad.maxWidth = 1;
         oSignaturePad.minWidth = 1;
+        oSignaturePad.penColor = "rgb(0,255,0)";
 
         oSignaturePad.clear();
 
         let size = Nepfeedback.adjustSize();
+
         if (size.width !== "") {
             oSignaturePad._canvas.height = size.height;
             oSignaturePad._canvas.width = size.width;
@@ -89,33 +98,30 @@ const Nepfeedback = {
             oSignaturePad._canvas.width = Nepfeedback.originalWidth;
         }
 
-        if (Nepfeedback.originalImage) {
-            oSignaturePad.fromDataURL(Nepfeedback.originalImage);
-        }
+        oSignaturePad.fromDataURL(Nepfeedback.originalImage);
     },
-
     adjustSize: function () {
-        let out = { width: "", height: "" };
-        let percentage;
+        let percentage = "";
+        let out = {
+            width: "",
+            height: "",
+        };
 
         if (Nepfeedback.originalWidth > oSignaturePad._canvas.width) {
             percentage = oSignaturePad._canvas.width / Nepfeedback.originalWidth;
             out.width = Nepfeedback.originalWidth * percentage;
             out.height = Nepfeedback.originalHeigth * percentage;
         }
-
         if (
-            (out.height && out.height > oSignaturePad._canvas.height) ||
-            (!out.height && Nepfeedback.originalHeigth > oSignaturePad._canvas.height)
+            (out.height !== "" && out.height > oSignaturePad._canvas.height) ||
+            (out.height === "" && Nepfeedback.originalHeigth > oSignaturePad._canvas.height)
         ) {
             percentage = oSignaturePad._canvas.height / Nepfeedback.originalHeigth;
             out.width = Nepfeedback.originalWidth * percentage;
             out.height = Nepfeedback.originalHeigth * percentage;
         }
-
         return out;
     },
-
     speechToTextInicialization: function () {
         try {
             if ("webkitSpeechRecognition" in window) {
@@ -123,7 +129,7 @@ const Nepfeedback = {
             } else if ("SpeechRecognition" in window) {
                 Nepfeedback.recognition = new SpeechRecognition();
             } else {
-                throw "not supported";
+                throw "not suported";
             }
 
             Nepfeedback.recognition.interimResults = true;
@@ -138,7 +144,7 @@ const Nepfeedback = {
             };
 
             Nepfeedback.recognition.onresult = function (event) {
-                let transcript = event.results[0][0].transcript;
+                var transcript = event.results[0][0].transcript;
                 oTextAreaComment.setValue(transcript);
                 Nepfeedback.changedComment = true;
             };
@@ -152,7 +158,6 @@ const Nepfeedback = {
     handleCommentRemovel: function () {
         Nepfeedback.changedComment = false;
     },
-
     sendFeedback: function () {
         if (!Nepfeedback.changedComment && !Nepfeedback.changedImage) {
             oNUIToast.clone().show();
@@ -164,22 +169,22 @@ const Nepfeedback = {
             reportedBy: oInputName.getValue(),
             image: Nepfeedback.originalImage,
             app: Nepfeedback.currentApp,
+            //deviceID: //AppStorage.deviceID //"5b865584-28f9-4154-b54c-675563d16dfe",
         };
         Object.assign(feedback, $.os);
         Object.assign(feedback, $.device.is);
+        var options = {
+            data: feedback,
+        };
 
-        let options = { data: feedback };
         apiFeedbackSent(options);
         return true;
     },
-
     getCurrentApp: function () {
-        Nepfeedback.currentApp = AppCache ? AppCache.CurrentApp : localAppID;
+        if (AppCache) {
+            Nepfeedback.currentApp = AppCache.CurrentApp;
+        } else {
+            Nepfeedback.currentApp = localAppID;
+        }
     },
 };
-
-// Ensure color is logged to troubleshoot potential issues
-console.log("CSSdefault color:", Nepfeedback.CSSdefault.color);
-console.log("SignaturePad color:", oSignaturePad ? oSignaturePad.penColor : "SignaturePad not initialized");
-
-
